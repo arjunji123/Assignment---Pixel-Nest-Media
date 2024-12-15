@@ -1,0 +1,44 @@
+1. Fetching the top 5 most sold products:
+
+SELECT 
+    p.product_id, 
+    p.product_name, 
+    SUM(o.quantity) AS total_quantity_sold
+FROM 
+    products p
+JOIN 
+    orders o ON p.product_id = o.product_id
+GROUP BY 
+    p.product_id, p.product_name
+ORDER BY 
+    total_quantity_sold DESC
+LIMIT 5;
+
+///////////////////////////////
+
+
+2. Listing all products along with their category names:
+
+SELECT 
+    p.product_id, 
+    p.product_name, 
+    p.price, 
+    c.category_name
+FROM 
+    products p
+LEFT JOIN 
+    categories c ON p.category_id = c.category_id;
+
+///////////////////////////////////
+
+
+3. Calculating the total revenue generated in the last 30 days:
+
+SELECT 
+    SUM(o.quantity * p.price) AS total_revenue
+FROM 
+    orders o
+JOIN 
+    products p ON o.product_id = p.product_id
+WHERE 
+    o.order_date >= CURDATE() - INTERVAL 30 DAY;
