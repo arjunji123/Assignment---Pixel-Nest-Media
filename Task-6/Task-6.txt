@@ -1,0 +1,65 @@
+Scenario 1: Adding a Leave Tracking Feature
+
+1.Understand the Existing System:
+
+- Study the current HR Management System's code and database structure.
+- Understand how employee data and other features are implemented.
+
+2.Plan the Feature:
+
+- Discuss requirements with stakeholders (e.g., HR managers).
+- Plan what needs to be done:
+           - UI: Design a form for applying for leave (leave type, dates, reason).
+           - Back-End API: Create APIs for submitting, approving, and viewing leave requests.
+           - Database: Add a new table (leave_applications) with columns like employee_id, leave_type, start_date, end_date, and status.
+
+3.Implementation:
+
+- Front-End:
+       - Create a "Leave Application" page with validation for inputs.
+- Back-End:
+       - Develop APIs to handle leave applications and workflows (e.g., approval, balance tracking).
+- Database:
+       - Add a table to store leave application details.
+
+4.Testing:
+
+- Test the form, APIs, and database separately.
+- Do end-to-end testing to ensure everything works together.
+
+5.Deploy:
+
+- Deploy the feature to a test environment, get feedback, and then release it to production.
+
+///////////////////////////////////////////
+
+Scenario 2: Optimizing a Slow Checkout Page
+
+1.Analyze the Problem:
+
+- Use tools like Chrome DevTools to identify slow areas (e.g., large images, API delays).
+- Check API and database response times to find bottlenecks.
+
+2.Optimize Backend:
+
+- Database: Fix slow queries by adding indexes or rewriting them.
+- APIs: Simplify logic and reduce unnecessary calls.
+
+3.Optimize Front-End:
+
+- Images and Scripts: Compress images and minify CSS/JavaScript files.
+- Lazy Loading: Load less important content (e.g., recommendations) after the main page.
+
+4.Implement Caching:
+
+- Cache frequently accessed data (e.g., cart items) on the server.
+- Use browser caching for static files like images, CSS, and JavaScript.
+
+5.Test and Monitor:
+
+- Run load tests to check performance under heavy traffic.
+- Use monitoring tools to track improvements after deployment.
+
+
+
+

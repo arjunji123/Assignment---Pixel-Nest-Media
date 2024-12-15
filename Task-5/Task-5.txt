@@ -1,0 +1,32 @@
+1. JavaScript Code:
+
+function calculateTotal(price, taxRate) {
+    const total = price * taxRate;
+    return total;
+}
+
+console.log(calculateTotal(100, 0.2)); // Expected: 120
+
+--> Problem: The formula price * taxRate only calculates the tax, not the total amount.
+
+--> Fix: Add the tax to the price: const total = price + (price * taxRate);
+
+
+
+2. SQL Query: 
+
+SELECT product_name, SUM(quantity) 
+FROM orders 
+WHERE order_date > CURRENT_DATE - 30 
+GROUP BY product_id;
+
+--> Problem: The orders table does not have a product_name column.
+             To get product_name, you need to join the orders table with the products table using the product_id column.
+
+--> Fix: Join the orders table with the products table like this:
+
+SELECT p.product_name, SUM(o.quantity) 
+FROM orders o
+JOIN products p ON o.product_id = p.product_id
+WHERE o.order_date > CURRENT_DATE - 30 
+GROUP BY p.product_name;
