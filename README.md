@@ -24,7 +24,7 @@ git pull
 4. **Navigate to Task 1 Directory:**
 
    ```bash
-   cd Task-1/hotel-booking-system
+   cd Task-1
    ```
 
 5. **Install Dependencies:**
@@ -49,12 +49,12 @@ The application will open, and you can interact with the Hotel Booking System UI
 1. **Navigate to Task 2 Directory:**
 
    ```bash
-   cd Task-2/employee-management
+   cd Task-2
    ```
 
 2. **Import the Database into MySQL:**
 
-   - The SQL file is located in the `employee-management` folder and is named **employee_management.sql**.
+   - The SQL file is located in the `Task-2` folder and is named **employee_management.sql**.
    - Import this file into your MySQL database.
 
 3. **Install Dependencies:**
