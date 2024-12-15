@@ -8,18 +8,6 @@
    git clone https://github.com/arjunji123/Assignment-Pixel-Nest-Media
    ```
 
-2. **Checkout task-1 Branch:**
-
-```bash
-git checkout task-1
-```
-
-3. **Pull task-1 Branch:**
-
-```bash
-git pull
-```
-
 2. **Navigate to Task 1 Directory:**
 
    ```bash
