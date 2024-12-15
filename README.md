@@ -9,31 +9,37 @@
    ```bash
    git clone https://github.com/arjunji123/Assignment-Pixel-Nest-Media
    ```
-2. **Checkout All-Tasks Branch:**
+
+ 2. **Navigate to Assignment-Pixel-Nest-Media Directory:**
+
+   ```bash
+cd Assignment-Pixel-Nest-Media
+   ```
+3. **Checkout All-Tasks Branch:**
 
 ```bash
 git checkout All-Tasks
 ```
 
-3. **Pull All-Tasks Branch:**
+4. **Pull All-Tasks Branch:**
 
 ```bash
 git pull
 ```
 
-4. **Navigate to Task 1 Directory:**
+5. **Navigate to Task 1 Directory:**
 
    ```bash
    cd Task-1
    ```
 
-5. **Install Dependencies:**
+6. **Install Dependencies:**
 
    ```bash
    npm install
    ```
 
-6. **Start the Project:**
+7. **Start the Project:**
    ```bash
    npm start
    ```
